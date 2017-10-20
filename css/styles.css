@@ -57,12 +57,12 @@ img{
 	text-transform: uppercase;
 }
 
-
 .quote-externo{
 	max-width: 320px;
 	margin: 0 auto;
 	margin-bottom: 40px;
 	color: #fff;
+	border-left:none;
 }
 .quote-externo cite {
 	font-style: normal;
@@ -138,6 +138,10 @@ img{
 	padding: 20px 20px;
 }
 
+.produtos_lista li{
+	margin: 0 auto;
+}
+
 /* Portfólio */
 .portfolio{
 	padding:60px 0;
@@ -154,32 +158,35 @@ img{
 .portfolio .call p{
 	color:#fff;
 }
+
 .portfolio_lista img{
-	margin: 0 auto; /* 0=cima embaixo */
+	margin: 0 auto;
 }
-.portfolio_lista div:last-of-type{ /* 15px no topo da ultima img */
+
+.portfolio_lista div:last-of-type{
 	margin-top: 15px;
 }
-.portfolio_lista div:first-of-type{ /* 15px no botao */
+
+.portfolio_lista div:first-of-type{
 	margin-bottom: 15px;
 }
 
 /* *************************** */
 
 /* Qualidade */
-.qualidade{
+.qualidade {
 	padding: 60px 0;
 }
 
-.qualidade .subtitulo:after{
+.qualidade .subtitulo:after {
 	content: "";
 	width: 634px;
 	height: 83px;
 	display: block;
 	background: url("../img/linhas.png") no-repeat center;
-	position: absolute;/* cola la em cima da pagina*/
-	top: 2277px;
-	right: 473px;
+	position: absolute;
+	top: 2279px;
+	right: 322px;
 	z-index: -1;
 }
 
@@ -211,57 +218,71 @@ img{
 .qualidade_lista li p{
 	padding: 10px 20px 20px 20px;
 }
-/*footer - rodapé*/
+/* Quebra */
+
+.quebra{
+	height: 220px;
+	background: url("../img/bg-footer.jpg") no-repeat center;
+	background-size: cover;
+	text-align: center;
+	padding-top: 40px;
+}
+
+/* Footer Rodapé */
+
 .copy{
 	background: #fec63e;
 	padding: 20px 0;
+	padding-left: 15px;	
 }
 .footer{
 	background: #000;
-	color: #fff;
+	color:#fff;
 	padding: 20px 0;
 }
-.footer div{
-	color: white;
-}
-.footer div ul{
-	color: white;
-}
-.footer div ul li{
-	color: white;
-}
-.footer_redes ul li{
-	display:inline-block; 
-	margin-right: 10px;
-}
-.footer_redes ul li a{
-	border: 3px solid #fec63e;
-	display: block;
-	text-decoration: none;
-	padding: 10px;
-	transition: all .3s ease;
-}
-.footer_redes ul li a:hover{
-	border-color: #fff;
-}
-.footer h3:after{
-	content: "";
-	display: block;
-	width: 60px;
-	height: 3px;
-	background: #000;
-	margin: 6px 0 12px 0;
-	background: #fec63e;
-}
+
 .footer h3{
 	font-weight: bold;
 	font-size: 18px;
 	line-height: 25px;
 	text-transform: uppercase;
-	letter-spacing: .1em
-	margin-top:20px;
+	letter-spacing: .1em;
 	color: #fec63e;
-}	
+}
+
+.footer h3:after{
+	content: "";
+	display: block;
+	width: 60px;
+	height: 3px;
+	background: #fec63e;
+	margin: 6px 0 12px 0;
+}
+
+.footer_redes ul li{
+	display:inline-block;
+	margin-right: 10px;
+}
+.footer_redes ul li a{
+	border: 3px solid #fec63e;
+	display: block;	
+	padding: 10px;
+	transition: all .3s ease;
+}
+.footer_redes ul li a:hover{
+	border-color:#fff;
+}
+
+.footer_historia{
+	padding-right: 40px;
+}
+
+.footer_contato ul li{
+	font-size: 14px;
+	line-height: 20px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 /* Botão */
 .botao {
 	border:3px solid #fec63e;
@@ -292,19 +313,3 @@ img{
 	margin-bottom: 20px;
 }
 /* ************************** */
-
-/*.footer{
-	background: #000;
-}
-.footer-amarelo{
-	background: #fec63e;
-}
-.footer div{
-	color: white;
-}
-.footer div h3{
-	color: #fec63e;
-}
-.footer div ul{
-	color: white;
-}
